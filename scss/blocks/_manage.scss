@@ -1,0 +1,165 @@
+.manage {
+  padding-top: 150px;
+}
+
+.manage__list {
+  padding-left: 0;
+}
+
+.manage__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.manage__item:nth-child(2) {
+  margin-top: 150px;
+  margin-bottom: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.manage__text {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+
+.textdiv {
+  max-width: 486px;
+  width: 100%;
+}
+
+.textdiv__span {
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #22343D;
+}
+
+.manage__heading {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  margin: 0;
+  margin-bottom: 23px;
+}
+
+.textdiv__list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.textdiv__heading {
+  margin: 0;
+  margin-bottom: 12px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px
+}
+
+.textdiv__text {
+  margin: 0;
+  margin-bottom: 25px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.mange__text {
+  margin: 0;
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.second {
+  list-style: none;
+  padding-left: 65px;
+}
+
+.second__text {
+  margin: 0;
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.second__item {
+  position: relative;
+}
+
+.second__item:nth-child(1)::before {
+  background-image: url("/img/yellow.png");
+  content: "";
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  left: -65px;
+  top: 7px;
+}
+
+.second__item:nth-child(2)::before {
+  background-image: url("/img/red.png");
+  content: "";
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  left: -65px;
+  top: 7px;
+}
+
+.second__item:nth-child(3)::before {
+  background-image: url("/img/blue.png");
+  content: "";
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  left: -65px;
+  top: 7px;
+}
+
+.manage__images:nth-child(1) {
+  width: 539px;
+  height: 473px;
+}
+
+.manage__images:nth-child(2) {
+  width: 543px;
+  height: 500px;
+}
+
+.manage__images:nth-child(3) {
+  width: 541px;
+  height: 451px;
+}
+
+@media only screen and (max-width: 426px) {
+  .manage__item {
+    flex-direction: column;
+  }
+
+  .manage__images:nth-child(1) {
+    max-width: 349px;
+    height: 306px;
+  }
+
+  .manage__images:nth-child(2) {
+    max-width: 350px;
+    height: 319px;
+  } 
+
+  .manage__images:nth-child(3) {
+    max-width: 350px;
+    height: 291px;
+  }
+
+  .second__item:nth-child(2)::before {
+    top: 16px;
+  }
+}
