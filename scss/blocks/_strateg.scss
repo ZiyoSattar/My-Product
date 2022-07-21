@@ -1,0 +1,106 @@
+.str {
+  padding-bottom: 180px;
+}
+
+.str__head {
+  margin: 0;
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 51px;
+}
+
+.str__text {
+  margin: 0;
+  margin-bottom: 33px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.str__list {
+  display: flex;
+  margin: 0;
+  position: relative;
+  padding-left: 0;
+  list-style: none;
+}
+
+.str__list::before {
+  position: absolute;
+  background-image: url(/img/bef.png);
+  background-repeat: no-repeat;
+  top: 115%;
+  left: 47%;
+  content: "";
+  width: 68px;
+  height: 16px;
+}
+
+.str__item {
+  max-width: 348px;
+  width: 100%;
+  background-color: rgb(246, 233, 233);
+  border-radius: 8px;
+}
+
+.str__img {
+  max-width: 348px;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.str__item:nth-child(2) {
+  margin: 0 32px;
+}
+
+.strd {
+  padding-right: 30px;
+  padding-bottom: 40px;
+  padding-left: 24px;
+}
+
+.strd__heaed {
+  margin: 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 40px;
+}
+
+.greenly {
+  color: #02897A;
+}
+
+.greenly__spn {
+  color: #22343D;
+}
+
+.strd__span {
+  display: block;
+  margin: 0;
+  margin-bottom: 12px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+
+@media only screen and (max-width: 426px) {
+  .str__list {
+    flex-direction: column;
+  }
+
+  .str__item:nth-child(2) {
+    margin: 16px auto;
+  }
+
+  .str__item {
+    margin: 0 auto;
+  }
+
+  .str__list::before {
+    top: 105%;
+    left: 39% ;
+  }
+
+}
